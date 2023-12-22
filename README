@@ -1,14 +1,14 @@
-#Description
+# Description
    This is a client server application of the game Gomoku which is similar to Connect 4. This application supports multiple games being run at once. 
 
 
-#TO compile both the server and the clients:
+# TO compile both the server and the clients:
    1. compile the server program:
         gcc -lpthread -o Gomoku GameController.c GameMaster.c database.c crypt.c CommonFunctions.c -lcrypt -I/usr/include/postgresql -lpq
    2. compile the client program:
         gcc -o client client-main.c client-functions.c crypt.c -lcrypt
 
-#TO Run The Server and Client:
+# TO Run The Server and Client:
 
    1. run the server program the server that is specified in your code: 
         ./Gomoku PORT#
